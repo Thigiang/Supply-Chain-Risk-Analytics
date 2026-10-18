@@ -1,0 +1,16 @@
+# Python environment & caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Data — rebuild with notebooks/load_data.ipynb
+data/*.db
+DataCo/*.csv
+!DataCo/DescriptionDataCoSupplyChain.csv
+
+# Secrets
+.env
+
+# OS / editor junk
+.DS_Store
+supply_chain.session.sql
