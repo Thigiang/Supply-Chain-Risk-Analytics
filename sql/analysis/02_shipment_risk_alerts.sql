@@ -59,10 +59,6 @@ GROUP BY risk_label
 ORDER BY n DESC;
 
 -- 3. Analyze risk labels by shipping mode to see where each risk level comes from
-    --Finding:
-        -- High risk only comes from second class
-        -- First Class always lates with a medium label
-        -- Before shipment, First class can be predicted as Medium risk label 
     -- Finding:
         -- High risk comes ONLY from Second Class: all 13,469 High shipments, 39.84% of Second Class
             --   (2-day promise, actual 2–6 days → 3–4 days late is common)
