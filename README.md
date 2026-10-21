@@ -3,6 +3,8 @@
 SQL analysis of 180,519 order items from the DataCo supply chain dataset: OTIF, root cause of late
 deliveries, department risk scoring and shipment risk alerts.
 
+**Data:** [DataCo Smart Supply Chain for Big Data Analysis](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis) (Kaggle)
+
 **Headline:** OTIF is 41.78%, and lateness is driven by shipping-mode promises the operation can't meet
 (First Class promises 1 day but always takes 2), not by market, region or department.
 
