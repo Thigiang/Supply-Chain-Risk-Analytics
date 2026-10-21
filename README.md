@@ -4,6 +4,7 @@ Why are more than half of deliveries late, and where should a business act first
 This project answers that with SQL on 180,519 order items from the DataCo supply chain dataset,
 and presents the results in an interactive **Tableau** dashboard.
 
+**Data:** [DataCo Smart Supply Chain for Big Data Analysis](https://www.kaggle.com/datasets/shashwatwork/dataco-smart-supply-chain-for-big-data-analysis) (Kaggle)  
 **Tools:** Python (pandas) · SQLite · SQL (CTEs, window functions) · Tableau
 
 ## Key findings
@@ -85,7 +86,6 @@ Tableau Public. The packaged workbook includes its data, so nothing else is need
    .venv/bin/pip install -r requirements.txt
    ```
 3. Build the database: run `notebooks/load_data.ipynb` top to bottom. It creates `data/supply_chain.db`.
-   (The notebook's two file paths point to `~/Desktop/Supply-Chain-Risk-Analytics/`; change them if your folder is elsewhere.)
 4. Export the dashboard queries to CSV:
    ```bash
    for f in sql/dashboard/*.sql; do name=$(basename "$f" .sql); sqlite3 -header -csv data/supply_chain.db < "$f" > "tableau/data/$name.csv"; done
