@@ -14,3 +14,7 @@ DataCo/*.csv
 # OS / editor junk
 .DS_Store
 supply_chain.session.sql
+
+# Tableau autosave and extract files (extracts are packaged inside the .twbx)
+*.twbr
+tableau/data/*.hyper

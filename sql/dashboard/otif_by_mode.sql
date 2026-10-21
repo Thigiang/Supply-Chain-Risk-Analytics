@@ -1,0 +1,16 @@
+WITH orders AS(
+    SELECT order_id, shipping_mode,
+        MAX(days_for_shipping_real <= days_for_shipment_scheduled) AS on_time,
+        MAX(delivery_status <> 'Shipping canceled') AS in_full
+    FROM supply_chain
+    WHERE order_status <> 'SUSPECTED_FRAUD'
+    GROUP BY order_id, shipping_mode
+)
+SELECT shipping_mode, COUNT(*) AS n_orders,
+    ROUND(100.0 * AVG(on_time), 2) AS on_time_pct,
+    ROUND(100.0 * AVG(in_full), 2) AS in_full_pct,
+    SUM(NOT in_full) AS n_canceled,
+    ROUND(100.0 * AVG(on_time AND in_full), 2) AS otif_pct
+FROM orders
+GROUP BY shipping_mode
+ORDER BY otif_pct ASC;
