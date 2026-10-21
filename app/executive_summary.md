@@ -1,0 +1,7 @@
+- **Fewer than half of orders arrive on time and in full:** OTIF is **41.78%** across 64,264 orders (suspected fraud excluded).
+- **Lateness is the problem, not missing orders:** On Time is only 42.68% while In Full is 97.87%. 57.29% of shipped items arrive late, and **$18.1M** of revenue was delivered late.
+- **Shipping mode drives it:** OTIF is 58.89% for Standard Class, 50.43% for Same Day, 19.61% for Second Class and **0.00% for First Class**.
+- **The premium modes overpromise:** First Class promises 1 day but always takes 2, so every First Class shipment is late. Second Class is the only source of severe delays: 39.84% of its shipments arrive 3+ days late.
+- **Region and department are not the cause:** department late rates differ by only 1.2 points (56.77% to 58.00%), within chance, so the department risk ranking does not identify a riskier supplier.
+- **The problem is structural, not seasonal:** the monthly late rate stays between 55.17% and 59.31% in all 37 months.
+- **Recommendation:** reset the promised delivery days for First and Second Class to what operations actually deliver, or speed those modes up. Together they cover 22,338 orders, about a third of all orders.
