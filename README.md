@@ -106,5 +106,5 @@ DataCo/DescriptionDataCoSupplyChain.csv   data dictionary
 
 ## AI-assisted workflow
 
-I wrote the code and analysis, and used Claude (Claude Code) as a reviewer: it tested my queries and app
+I wrote the code and analysis, and used Claude (Claude Code) as a reviewer: it tested my queries
 by running them, pointed out issues, and suggested improvements.
