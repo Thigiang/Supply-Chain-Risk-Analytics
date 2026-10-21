@@ -11,7 +11,7 @@ The project has two versions with the same SQL analysis and a different dashboar
 | Version | Dashboard | Branch |
 |---|---|---|
 | Streamlit | Python web app with an executive summary page | [`streamlit`](https://github.com/Thigiang/Supply-Chain-Risk-Analytics/tree/streamlit) |
-| Tableau | Tableau Public dashboard | [`tableau`](https://github.com/Thigiang/Supply-Chain-Risk-Analytics/tree/tableau) |
+| Tableau | [Tableau Public dashboard](https://public.tableau.com/app/profile/thi.giang/viz/Supply_Chain_Risk_Analysis_Dashboard/Dashboard) | [`tableau`](https://github.com/Thigiang/Supply-Chain-Risk-Analytics/tree/tableau) |
 
 Each branch's README has the full findings, KPI definitions, data limitations and setup steps.
 This branch holds the shared work: `notebooks/` (data cleaning), `sql/exploration/`, `sql/analysis/`
