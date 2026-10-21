@@ -1,0 +1,9 @@
+shipping_mode,risk_label,n,pct
+"First Class",Medium,26513,100.0
+"Same Day",Medium,4454,47.93
+"Same Day",Low,4839,52.07
+"Second Class",High,13469,39.84
+"Second Class",Medium,13518,39.99
+"Second Class",Low,6819,20.17
+"Standard Class",Medium,41023,39.77
+"Standard Class",Low,62130,60.23

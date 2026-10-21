@@ -1,0 +1,5 @@
+shipping_mode,n_orders,on_time_pct,in_full_pct,n_canceled,otif_pct
+"First Class",9826,0.0,97.72,224,0.0
+"Second Class",12512,20.08,97.95,256,19.61
+"Same Day",3488,51.58,97.68,81,50.43
+"Standard Class",38438,60.14,97.9,806,58.89

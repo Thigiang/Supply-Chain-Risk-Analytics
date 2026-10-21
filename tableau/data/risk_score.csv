@@ -1,0 +1,9 @@
+department_name,n,delay_pct,lead_time_var,cancel_rate_pct,risk_score,risk_rank
+Outdoors,9464,58.0,2.65,2.08,0.809,1
+Fitness,2425,58.0,2.644,2.1,0.79,2
+Technology,1433,57.74,2.587,2.58,0.592,3
+Golf,32476,57.28,2.636,2.18,0.487,4
+Apparel,47871,57.22,2.644,2.06,0.456,5
+Footwear,14197,57.22,2.621,2.16,0.384,6
+"Fan Shop",65378,57.19,2.63,2.06,0.378,7
+"Discs Shop",1987,56.77,2.61,2.21,0.169,8
