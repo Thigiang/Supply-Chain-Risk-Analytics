@@ -24,7 +24,7 @@ actually deliver, or speed those modes up. Together they cover 22,338 orders, ab
 
 ## Dashboard
 
-**[View the dashboard on Tableau Public](TABLEAU_PUBLIC_LINK)**
+**[View the dashboard on Tableau Public](https://public.tableau.com/app/profile/thi.giang/viz/Supply_Chain_Risk_Analysis_Dashboard/Dashboard)**
 
 One page with KPI tiles (OTIF, late rate, average delay, revenue delivered late), OTIF by shipping mode,
 shipment risk labels by mode, the department risk ranking, and the monthly late-rate trend.
