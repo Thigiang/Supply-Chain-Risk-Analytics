@@ -106,15 +106,5 @@ DataCo/DescriptionDataCoSupplyChain.csv   data dictionary
 
 ## AI-assisted workflow
 
-I built this project with Claude (Claude Code) as a tutor and reviewer:
-
-- **I wrote the SQL**, with Claude explaining concepts along the way (CTEs, window functions, `PARTITION BY`,
-  margin of error) and reviewing each query by re-running it against the database.
-- **The reviews caught real bugs**, for example filters that silently matched nothing (`'Shipping cancled'`,
-  `'SUSPECTED FRAUD'` instead of `'SUSPECTED_FRAUD'`), swapped profit margins in a finding, orders double-counted
-  across departments, and rounding before subtracting. The habit that came out of it: after every filter, check
-  that the row count changed by the expected amount.
-- **Claude guided the Tableau build step by step** (I built the workbook myself) and drafted some of the
-  written findings. I reviewed these, and every number was checked against the query output.
-- **It also helped with tooling issues**, such as a SQLTools error caused by `;` inside SQL comments, and a
-  Tableau Public publishing error caused by an extract missing from the packaged workbook.
+I wrote the code and analysis, and used Claude (Claude Code) as a reviewer: it tested my queries and app
+by running them, pointed out issues, and suggested improvements.
