@@ -18,3 +18,7 @@ The project has two versions with the same SQL analysis and a different dashboar
 Each branch's README has the full findings, KPI definitions, data limitations and setup steps.
 This branch holds the shared work: `notebooks/` (data cleaning), `sql/exploration/`, `sql/analysis/`
 and `sql/dashboard/`.
+
+The SQL is written for SQLite. It uses SQLite's boolean shortcuts (e.g. `SUM(NOT in_full)`,
+`AVG(order_status = 'SUSPECTED_FRAUD')`); other databases such as PostgreSQL or Snowflake need
+`SUM(CASE WHEN ... THEN 1 ELSE 0 END)` instead.

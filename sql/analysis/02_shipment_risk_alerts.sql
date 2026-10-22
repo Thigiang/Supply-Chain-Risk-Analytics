@@ -3,10 +3,10 @@
 -- Rules:
     -- Level: per item
     -- Exclude canceled items (including fraud)
-    -- delay = days_for_shiping_real - days_for_shipment_scheduled
+    -- delay = days_for_shipping_real - days_for_shipment_scheduled
         -- delay > 0: late
         -- delay = 0: on time
-        -- delay < - : early
+        -- delay < 0: early
 
 -- 1. Delay distribution 
 
@@ -65,7 +65,9 @@ ORDER BY n DESC;
         -- First Class: 100% Medium. Every shipment is exactly 1 day late, never on time, never High
         -- Standard Class and Same Day are never High: Standard 39.77% Medium / 60.23% Low,
         --   Same Day 47.93% Medium / 52.07% Low
-        -- Early warning: because risk depends only on shipping mode, it can be flagged when the order is placed:
+        -- These labels use the actual delay, so they describe shipments after delivery (retrospective).
+        -- Early warning: shipping mode is known when the order is placed, and in this data it is the only
+        --   factor that separates risk levels, so a per-mode risk can be flagged at order time:
             --   First Class → certain to be late (Medium), Second Class → ~80% late and ~40% severely late (High)
             --   Standard Class and Same Day → lower risk, never severely late
         -- Limit: within a mode, which individual shipments will be late can't be predicted from this data
