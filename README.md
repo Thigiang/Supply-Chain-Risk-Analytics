@@ -107,8 +107,3 @@ tableau/Supply_Chain_Risk_Analysis_Dashboard.twbx   Tableau workbook (data inclu
 tableau/data/                  query results exported to CSV for Tableau
 DataCo/DescriptionDataCoSupplyChain.csv   data dictionary
 ```
-
-## AI-assisted workflow
-
-I wrote the code and analysis, and used Claude (Claude Code) as a reviewer: it tested my queries
-by running them, pointed out issues, and suggested improvements.
