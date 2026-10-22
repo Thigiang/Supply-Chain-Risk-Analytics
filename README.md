@@ -102,8 +102,3 @@ app/pages/1_Executive_Summary.py
 app/executive_summary.md       the executive summary text
 DataCo/DescriptionDataCoSupplyChain.csv   data dictionary
 ```
-
-## AI-assisted workflow
-
-I wrote the code and analysis, and used Claude (Claude Code) as a reviewer: it tested my queries and app
-by running them, pointed out issues, and suggested improvements.
