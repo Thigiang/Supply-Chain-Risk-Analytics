@@ -58,7 +58,7 @@ with left:
         hide_index=True,
         column_config={
             "department_name": "Department",
-            "n": "Items",
+            "n": "Items (incl. canceled)",
             "delay_pct": "Late (%)",
             "lead_time_var": "Lead-time variance",
             "cancel_rate_pct": "Canceled (%)",

@@ -13,7 +13,7 @@ and presents the results in an interactive **Streamlit** dashboard.
 |---|---|
 | How well are orders delivered? | **OTIF is 41.78%**: fewer than half of 64,264 orders arrive on time and in full |
 | What fails: timing or completeness? | Timing. On Time is 42.68%, In Full is 97.87%; 96.3% of OTIF failures are late deliveries |
-| What drives lateness? | **Shipping mode only.** OTIF ranges from 0.00% (First Class) to 58.89% (Standard Class). Market, region, customer segment, product category and department barely matter: their gaps are small, and the larger ones come from small groups and are within chance |
+| What drives lateness? | **Shipping mode is the only factor in the data that explains it.** OTIF ranges from 0.00% (First Class) to 58.89% (Standard Class). Market, region, customer segment, product category and department barely matter: their gaps are small, and the larger ones come from small groups and are within chance |
 | Why? | **Overpromising.** First Class promises 1 day but always takes 2, so it is never on time. Second Class takes the same 2–6 days as Standard Class but promises 2 days instead of 4 |
 | What is at stake? | **$18.1M** of revenue (57%) was delivered late |
 | Which "supplier" is riskiest? | None meaningfully: department late rates differ by only 1.2 points, within chance |
@@ -57,6 +57,10 @@ Every number on the dashboard comes from a query in `sql/dashboard/`.
 Two rules apply throughout: canceled items are excluded from delivery metrics (they never shipped), and small
 groups (under 500 items) are excluded from rankings, because their rates swing too much by chance. Differences
 are judged against a rough margin of error of ±100/√n percentage points.
+
+The SQL is written for SQLite. It uses SQLite's boolean shortcuts (e.g. `SUM(NOT in_full)`,
+`AVG(order_status = 'SUSPECTED_FRAUD')`); other databases such as PostgreSQL or Snowflake need
+`SUM(CASE WHEN ... THEN 1 ELSE 0 END)` instead.
 
 ## Data limitations
 

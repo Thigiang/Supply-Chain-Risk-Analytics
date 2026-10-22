@@ -88,7 +88,7 @@ ORDER BY otif_pct DESC;
 --               OTIF 37.84% (Pet Shop) to 42.27% (Discs Shop). Pet Shop has only 481 items (wobble ≈ ±4.6 pts),
 --               and the four largest departments (Fan Shop, Apparel, Footwear, Golf) are all 41.78%–41.93% → no effect.
 --   In Full is flat everywhere (97.19%–99.24%).
---   Conclusion: shipping mode is the only factor that changes OTIF (0.00%–58.89%), market, region and department do not.
+--   Conclusion: of the dimensions in this dataset, shipping mode is the only one that changes OTIF (0.00%–58.89%), market, region and department do not.
 --   Checks: market and region n_orders sum to 64,264 and n_canceled to 1,367; department n_items sum to 176,457 with 3,692 canceled items.
 
 -- 2a. Market
