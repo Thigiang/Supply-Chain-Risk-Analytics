@@ -44,7 +44,7 @@ ORDER BY n_late DESC;
     -- Most late items are in Europe, LATAM and Pacific Asia only because they are the biggest markets:
     --   share_of_mode_late ≈ share_of_mode_items in every row (e.g. Standard Class Europe 27.56% vs 27.56%).
     --   The biggest gap is Same Day LATAM (27.20% of items vs 28.58% of late items, ~1.4 points).
-    -- Conclusion: market is not a root cause. Late items follow volume, and lateness is driven by shipping mode alone.
+    -- Conclusion: market is not a root cause. Late items follow volume; of the dimensions in this data, only shipping mode explains lateness.
  
 SELECT shipping_mode, market,
     COUNT(*) AS n,
